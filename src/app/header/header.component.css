@@ -1,0 +1,33 @@
+header {
+    background-color: cornflowerblue;
+    padding: 45px 0;
+}
+
+.cart_icon {
+    position: relative;
+}
+
+.cart_icon i {
+    font-size: 24px;
+    color: #fff;
+    right: 100px;
+}
+
+.cart_value {
+    position: absolute;
+    top: 0;
+    right: 98px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 60%;
+}
+
+.fa-shopping-cart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: black;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 4px 10px;
+}

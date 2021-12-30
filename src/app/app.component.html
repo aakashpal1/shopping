@@ -1,0 +1,29 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<app-header></app-header>
+<h1>Display Data</h1>
+<hr>
+
+
+<table id="users">
+
+    <tr>
+        <th *ngFor="let col of columns">
+            {{col}}
+        </th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td *ngFor="let col of index">
+            {{user[col]}}
+        </td>
+        <td>
+            <input type="number" id="quantity" placeholder="1" name="quantity" min="1" max="10">
+        </td>
+        <td>
+            <button (click)="clickEvent()">
+            Add To Cart</button>
+        </td>
+    </tr>
+
+</table>
